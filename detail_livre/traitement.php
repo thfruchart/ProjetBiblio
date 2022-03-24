@@ -27,3 +27,26 @@ catch(Exception $e)
     $reponse_auteur = $req->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
+<!doctype html>
+<html>
+ <head>
+     <title>
+        Auteurs trouvés
+     </title>
+     <meta charset="utf8">
+ </head>
+ <body>
+    <?php if (count($reponse_auteur) == 0){
+         echo "<h2>Pas de titre trouvé</h2>";
+     }
+     else {
+        echo "<h2>Titres trouvés : </h2>";
+     }
+    ?>
+     <ul>
+         <?php foreach($reponse_auteur as $element) : ?>
+            <li> <?= $element["nom"]  ?>  <?= $element["prenom"]  ?></li>
+         <?php endforeach ;?>
+     </ul>
+ </body>
+</html>
