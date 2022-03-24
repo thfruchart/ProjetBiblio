@@ -40,7 +40,7 @@ catch(Exception $e)
          echo "<h2>Pas d'auteurs' trouvé</h2>";
      }
      else {
-        echo "<h2>Titres trouvés : </h2>";
+        echo "<h2>Auteurs trouvés : </h2>";
      }
     ?>
      <ul>
