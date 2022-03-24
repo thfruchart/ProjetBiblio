@@ -37,7 +37,7 @@ catch(Exception $e)
  </head>
  <body>
     <?php if (count($reponse_auteur) == 0){
-         echo "<h2>Pas de titre trouvé</h2>";
+         echo "<h2>Pas d'auteurs' trouvé</h2>";
      }
      else {
         echo "<h2>Titres trouvés : </h2>";
